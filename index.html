@@ -2,167 +2,156 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="4Qw_wFbQ-H2aHSrWh6dbHAmWJ5TdpgyMjfhMU8Ky4-4" />
+
+<!-- ✅ MOST IMPORTANT FIX -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="google-site-verification" content="4Qw_wFbQ-H2aHSrWh6dbHAmWJ5TdpgyMjfhMU8Ky4-4">
+
 <title>Atif Mobile Shop | Since 2003</title>
 
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ================= ROOT THEME ================= */
 :root{
   --bg:#070b1d;
   --card:#0f172a;
-  --primary:#3b82f6;   /* Electric Blue */
-  --secondary:#22d3ee; /* Neon Cyan */
+  --primary:#3b82f6;
+  --secondary:#22d3ee;
   --text:#e5e7eb;
   --muted:#9ca3af;
 }
 
-/* ================= GLOBAL ================= */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   font-family:Segoe UI, sans-serif;
 }
+
 html{scroll-behavior:smooth}
+
 body{
   background:var(--bg);
   color:var(--text);
   line-height:1.8;
 }
+
 .container{
   max-width:1200px;
   margin:auto;
-  padding:90px 20px;
+  padding:80px 20px;
 }
+
 .section-title{
   text-align:center;
-  margin-bottom:50px;
+  margin-bottom:40px;
 }
+
 .section-title h2{
   font-size:36px;
 }
+
 .section-title span{
   color:var(--secondary);
 }
+
 .section-title p{
   color:var(--muted);
   margin-top:10px;
   max-width:720px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-inline:auto;
 }
 
-/* ================= ANIMATION ================= */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px)}
-  to{opacity:1;transform:translateY(0)}
-}
-.container,.hero,.owner-section{
-  animation:fadeUp .9s ease forwards;
-}
-
-/* ================= HERO ================= */
+/* HERO */
 .hero{
   text-align:center;
-  padding:130px 20px;
+  padding:120px 20px;
   background:linear-gradient(135deg,#020617,#070b1d,#0f172a);
 }
+
 .hero h1{
   font-size:52px;
   font-weight:800;
 }
+
 .hero h1 span{
   color:var(--primary);
 }
+
 .hero p{
   color:var(--muted);
   margin-top:15px;
   font-size:18px;
 }
 
-/* ================= CARDS ================= */
+/* CARD */
 .card{
   background:var(--card);
   border-radius:20px;
   padding:32px;
   box-shadow:0 15px 50px rgba(0,0,0,.5);
-  transition:.4s;
-}
-.card:hover{
-  transform:translateY(-8px);
 }
 
-/* ================= GRID ================= */
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
 }
 
-/* ================= SHOP IMAGES ================= */
+/* IMAGES */
 .shop-img{
   width:100%;
   height:250px;
   object-fit:cover;
   border-radius:18px;
-  transition:.4s;
-}
-.shop-img:hover{
-  transform:scale(1.05);
 }
 
-/* ================= OWNER ================= */
+/* OWNER */
 .owner-section{
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:50px;
+  gap:40px;
   flex-wrap:wrap;
 }
+
 .owner-img{
   width:300px;
   height:300px;
   border-radius:50%;
   object-fit:cover;
-  object-position:center 20%; /* 🔥 image thori upar aa jayegi */
+  object-position:center 20%;
   border:5px solid var(--secondary);
-  box-shadow:
-    0 0 0 8px rgba(34,211,238,0.12),
-    0 0 45px rgba(34,211,238,0.45);
-  transition:.4s;
 }
 
-.owner-img:hover{
-  transform:scale(1.05);
-}
 .owner-info{
   max-width:600px;
 }
+
 .owner-info h3{
   font-size:28px;
   color:var(--secondary);
 }
 
-/* ================= SERVICES ================= */
+/* SERVICES */
 .service i{
   font-size:42px;
   color:var(--primary);
   margin-bottom:15px;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer{
   background:#020617;
   text-align:center;
-  padding:50px 20px;
+  padding:40px 20px;
   color:var(--muted);
-  font-size:15px;
 }
 
-/* ================= WHATSAPP ================= */
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -172,20 +161,46 @@ footer{
   font-size:26px;
   padding:16px;
   border-radius:50%;
-  box-shadow:0 0 25px rgba(0,0,0,.6);
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width:768px){
+
+  .hero{
+    padding:90px 15px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .section-title h2{
+    font-size:28px;
+  }
+
+  .owner-img{
+    width:220px;
+    height:220px;
+  }
+
+  .container{
+    padding:60px 15px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
   <h1>Atif <span>Mobile Shop</span></h1>
   <p>Trusted Mobile Solutions • Since 2003</p>
 </section>
 
-<!-- ABOUT -->
 <section class="container">
   <div class="section-title">
     <h2>About <span>Our Shop</span></h2>
@@ -195,101 +210,8 @@ footer{
   <div class="card">
     <p>
       Established in 2003, Atif Mobile Shop has been serving customers with complete
-      mobile solutions for more than 20 years. Our aim is not only to sell products
-      but to provide honest, high-quality services that build long-term trust.
+      mobile solutions for more than 20 years.
     </p>
-    <p>
-      From mobile phones and accessories to repairing and software solutions, we
-      welcome all types of customers and ensure professional service every time.
-    </p>
-  </div>
-</section>
-
-<!-- OWNER -->
-<section class="container">
-  <div class="section-title">
-    <h2>Owner <span>Muhammad Atif</span></h2>
-    <p>25+ years of hands-on experience in the mobile industry</p>
-  </div>
-
-  <div class="owner-section">
-    <img class="owner-img"
-      src="https://i.ibb.co/3mvKWMR2/Whats-App-Image-2025-12-23-at-10-44-10-AM-1.jpg"
-      alt="Muhammad Atif">
-
-    <div class="owner-info card">
-      <h3>Muhammad Atif</h3>
-      <p>
-        Muhammad Atif is the founder of Atif Mobile Shop. With more than 25 years of
-        practical experience, he has built this business on honesty, customer trust
-        and professional standards. His focus is always on quality work and fair
-        dealing.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="container">
-  <div class="section-title">
-    <h2>Our <span>Services</span></h2>
-    <p>Everything you need — under one roof</p>
-  </div>
-
-  <div class="grid">
-    <div class="card service">
-      <i class="fa-solid fa-mobile-screen"></i>
-      <h3>Mobile Phones</h3>
-      <p>New & used mobile phones of all major brands.</p>
-    </div>
-    <div class="card service">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
-      <h3>Repairing</h3>
-      <p>Professional mobile repairing services.</p>
-    </div>
-    <div class="card service">
-      <i class="fa-solid fa-headphones"></i>
-      <h3>Accessories</h3>
-      <p>Chargers, covers, handsfree and more.</p>
-    </div>
-    <div class="card service">
-      <i class="fa-solid fa-microchip"></i>
-      <h3>Software</h3>
-      <p>Flashing, unlocking and software solutions.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="container">
-  <div class="section-title">
-    <h2>Our <span>Shop</span></h2>
-    <p>A look inside our professional setup</p>
-  </div>
-
-  <div class="grid">
-    <img class="shop-img" src="https://i.ibb.co/N6Yt0BYv/shop1-jpg.jpg">
-    <img class="shop-img" src="https://i.ibb.co/3m5sTYkk/shop2-jpg.jpg">
-    <img class="shop-img" src="https://i.ibb.co/xqNKTc4n/shop3-jpg.jpg">
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="container">
-  <div class="section-title">
-    <h2>Contact <span>Us</span></h2>
-    <p>Visit us or contact anytime</p>
-  </div>
-
-  <div class="card">
-    <p>🕗 Timings: 8:00 AM – 8:00 PM</p>
-    <p>📞 Phone: 0300-7803366</p>
-
-    <iframe
-      src="https://www.google.com/maps?q=Atif%20Mobile%20Shop%20Khan%20Bela&output=embed"
-      width="100%" height="320"
-      style="border:none;border-radius:18px;margin-top:20px">
-    </iframe>
   </div>
 </section>
 
