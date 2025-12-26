@@ -106,6 +106,29 @@ body{
 .shop-img:hover{
   transform:scale(1.05);
 }
+
+
+.shop-box{
+  width:100%;
+  height:250px;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.shop-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.shop-box img:hover{
+  transform:scale(1.05);
+}
+
+
+
+  
 .owner-section{
   display:flex;
   align-items:center;
@@ -179,6 +202,9 @@ footer{
 .online-store-btn:hover{
   background:#FF8C42;
 }
+
+
+  
 </style>
 </head>
 
@@ -254,10 +280,17 @@ footer{
     <p>A look inside our professional setup</p>
   </div>
   <div class="grid">
-    <img class="shop-img" src="https://i.ibb.co/N6Yt0BYv/shop1-jpg.jpg">
-    <img class="shop-img" src="https://i.ibb.co/3m5sTYkk/shop2-jpg.jpg">
-    <img class="shop-img" src="https://i.ibb.co/Y7ShMXhy/shop3-jpg.jpg">
+  <div class="shop-box">
+    <img src="https://i.ibb.co/N6Yt0BYv/shop1-jpg.jpg" alt="Shop Image 1">
   </div>
+  <div class="shop-box">
+    <img src="https://i.ibb.co/3m5sTYkk/shop2-jpg.jpg" alt="Shop Image 2">
+  </div>
+  <div class="shop-box">
+    <img src="https://i.ibb.co/xqNKTc4n/shop3-jpg.jpg" alt="Shop Image 3">
+  </div>
+</div>
+
 </section>
 
 <!-- ONLINE STORE -->
